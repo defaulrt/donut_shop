@@ -1,0 +1,30 @@
+body {
+
+}
+#header {
+  color: #FF3D2E;
+  font-family: Georgia, serif;
+
+}
+#button1 {
+  background-color:#265778;
+  color: #ffffff;
+  border-radius: .5em;
+}
+#headerFirst {
+  color: #39BBEC;
+  font-family: 'Press Start 2P', cursive;
+}
+#new_location {
+  border-radius: 1em;
+  background-color: blue;
+  padding: 2em;
+}
+tr:nth-child(even) {
+    background-color: #DAEAEF;
+    text-align: right;
+}
+tr:nth-child(odd) {
+    background-color: #9DBDC6;
+    text-align: right;
+}
