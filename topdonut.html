@@ -5,14 +5,28 @@
   <title></title>
 </head>
 <body>
- <table>
-    <tr id="hours"><th>Hours</th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00 AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td>6:00 PM</td><td>Total</td></tr>
-    <tr id="downtown"><th>Downtown</th></tr>
-    <tr id="ballard"><th>Ballard</th></tr>
-    <tr id="slu"><th>South Lake Union</th></tr>
-    <tr id="wedgewood"><th>Wedgewood</th></tr>
-    <tr id="capitolhill"><th>Capitol Hill</th></tr>
+ <main id="content">
+   <table>
+    <thead>
+      <tr ><th></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td>6:00 PM</td><td>Total</td></tr>
+    </thead>
+    <tbody id="tablebody">
+    </tbody>
   </table>
+  <h2>Add new Locations</h2>
+    <form id="new_location">
+      <label for="location">Name:</label>
+      <input name="location" type="text">
+      <label for="minCust">Minimum Customers:</label>
+      <input name="minCust" type="text">
+      <label for="maxCust">Max Customers:</label>
+      <input name="maxCust" type="text">
+      <label for="avgDonuts">Average Donuts:</label>
+      <input name="avgDonuts" type="text">
+      <button type="submit">Create new location</button>
+    </form>
+    <button id="clear_additions">Clear</button>
 <script src="game_construct.js"></script>
+<script src="events.js"></script>
 </body>
 </html>

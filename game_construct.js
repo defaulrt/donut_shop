@@ -3,11 +3,12 @@
     this.mincust = mincust;
     this.maxcust = maxcust;
     this.avgDonuts = avgDonuts;
+  this.dailyTotal = 0;
     this.hourlyArray = [];
 
     };
  TopDonut.prototype.hourlyTotals = function () {
-   var customersPerHour = Math.floor(Math.random() * (this.maxcust - this.mincust) + 1) +this.mincust;
+   var customersPerHour = Math.floor(Math.random() * (this.maxcust - this.mincust) + 1) + this.mincust;
    return Math.round(customersPerHour * this.avgDonuts)
  }
  // Thanks to stackoverflow
@@ -24,7 +25,10 @@
 
   TopDonut.prototype.render = function () {
     var dailyTotal = this.dailyTotals();
-    var Tr = document.getElementById(this.shopLoc);
+    var Tr = document.createElement('tr');
+  var elTd = document.createElement('td')
+  elTd.textContent = this.shopLoc;
+  Tr.appendChild(elTd);
     for (var i = 0; i < 13; i++) {
       var elTd = document.createElement('td');
       elTd.textContent = this.hourlyArray[i];
@@ -32,6 +36,8 @@
     };
     elTd.textContent = dailyTotal;
     Tr.appendChild(elTd);
+  console.log(Tr);
+  document.getElementById('tablebody').appendChild(Tr);
 
 };
 
@@ -45,4 +51,5 @@
  slu.render();
  wedgewood.render();
  capitolhill.render();
+ window.Note = TopDonut;
 
