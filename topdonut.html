@@ -3,18 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
+  <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
- <main id="content">
+  <div id="side" class="rotateDonut">
+      <img src="https://cdn0.iconfinder.com/data/icons/shift-food-drinks/32/Donut-128.png" />
+  </div>
+ <main id="container">
+   <h1 id="header" class="headerSlide">Welcome to the greatest donut shop ever</h1>
+     <p id="headerFirst">This should be easy on the eyes, but it really isn't. This font is turrrible</p>
+       <p id="headerSecond">We'll also style the buttons</p>
    <table>
     <thead>
-      <tr ><th></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td>6:00 PM</td><td>Total</td></tr>
+      <tr ><th></th><td>7:00 AM</td><td>8:00 AM</td><td>9:00 AM</td><td>10:00AM</td><td>11:00 AM</td><td>12:00 PM</td><td>1:00 PM</td><td>2:00 PM</td><td>3:00 PM</td><td>4:00 PM</td><td>5:00 PM</td><td>Total</td></tr>
     </thead>
     <tbody id="tablebody">
     </tbody>
   </table>
-  <h2>Add new Locations</h2>
-    <form id="new_location">
+    <form id="new_location" class="grow">
+        <h2 class="center">Add new Locations</h2>
       <label for="location">Name:</label>
       <input name="location" type="text">
       <label for="minCust">Minimum Customers:</label>
@@ -23,9 +31,18 @@
       <input name="maxCust" type="text">
       <label for="avgDonuts">Average Donuts:</label>
       <input name="avgDonuts" type="text">
-      <button type="submit">Create new location</button>
+      <button class="border" type="submit">Create new location</button>
     </form>
-    <button id="clear_additions">Clear</button>
+<br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div id="pie"></div>
+
 <script src="game_construct.js"></script>
 <script src="events.js"></script>
 </body>

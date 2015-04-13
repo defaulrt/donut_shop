@@ -1,0 +1,102 @@
+body {
+  background-color: teal;
+
+}
+#side {
+  position: fixed;
+  right: -.4em;
+}
+.rotateDonut:hover {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+#container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1em;
+  position: relative
+
+
+
+}
+#header {
+  color: #FF3D2E;
+  font-family: Georgia, serif;
+  background-color: blue;
+  border-top-left-radius: .2em;
+  border-top-right-radius: .2em;
+  padding: .1em;
+
+}
+.button1 {
+  background-color:#265778;
+  color: #ffffff;
+  border-radius: .5em;
+  position: absolute;
+}
+#headerFirst {
+  color: #39BBEC;
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+
+}
+#new_location {
+  border-radius: 1em;
+  background-color: beige;
+  padding: 2em;
+  position: absolute;
+}
+tr:nth-child(even) {
+    background-color: #DAEAEF;
+    text-align: right;
+}
+tr:nth-child(odd) {
+    background-color: #9DBDC6;
+    text-align: right;
+}
+table {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.center {
+  text-align: center;
+}
+
+.border:hover {
+  box-shadow:0px -5px 0 #088 inset}

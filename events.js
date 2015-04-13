@@ -30,7 +30,7 @@
 
  locationForm.addEventListener('submit', handleLocationFormSubmit);
  clearAdditions.addEventListener('click', function() {
-   locationForm.innerHTML = ' ' ;
+   Tr.innerHTML = ' ' ;
    tableData = [];
  });
 

@@ -29,7 +29,7 @@
   var elTd = document.createElement('td')
   elTd.textContent = this.shopLoc;
   Tr.appendChild(elTd);
-    for (var i = 0; i < 13; i++) {
+    for (var i = 0; i < 12; i++) {
       var elTd = document.createElement('td');
       elTd.textContent = this.hourlyArray[i];
       Tr.appendChild(elTd);
