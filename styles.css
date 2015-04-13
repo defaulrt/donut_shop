@@ -5,7 +5,9 @@ body {
 #side {
   position: fixed;
   right: -.4em;
-     -webkit-animation-name: spin;
+}
+.rotateDonut:hover {
+    -webkit-animation-name: spin;
     -webkit-animation-duration: 4000ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -96,3 +98,5 @@ table {
   text-align: center;
 }
 
+.border:hover {
+  box-shadow:0px -5px 0 #088 inset}
